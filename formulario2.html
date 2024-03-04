@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Título</title>
+    <style>
+        fieldset { 
+            width: 50%;
+            border: 2px solid #000; 
+            padding: 10px;
+            margin: 10px;
+        }
+        legend {
+            padding: 0 10px; 
+            font-weight: lighter; 
+        }
+    </style>
+</head>
+<body>
+<h1 style="padding-left: 20px;">Formulário</h1>
+<div>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form>
+            <label for="iptNome">Nome:</label>
+            <input type="text" id="iptNome"> <br>
+            <label for="iptNasc">Data de nascimento: </label>
+            <input type="date" id="iptNasc"> <br> 
+            <label for="iptEnd">Endereço: </label>
+            <input type="text" id="iptEnd"> <br> 
+            <label for="iptBairro">Bairro: </label>
+            <input type="text" id="iptBairro"> 
+            <label for="iptCid">Cidade: </label>
+            <input type="text" id="iptCid"> <br>
+            <label for="iptCep">CEP: </label>
+            <input type="text" id="iptCep">
+            
+            <label for="slcEstado">Estado: </label>
+            <select id="slcEstado" name="estado" >
+            <option value="" selected disabled>Selecione o estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select> <br> 
+        </form>
+    </fieldset>
+    <br>
+    <style>
+        fieldset { 
+            width: 50%;
+            border: 2px solid #000; 
+            padding: 10px;
+            margin: 10px;
+        }
+        legend {
+            padding: 0 10px; 
+            font-weight: lighter; 
+        }
+    </style>
+</head>
+<body>
+<div>
+    <fieldset>
+        <legend>Dados profissionais</legend>
+        <form>
+            Natureza do Cargo
+            <br>
+            <input type="radio" id="iptCargoG" name="iptCargo"> 
+            <label for="iptCargoG"> Gerência </label> 
+            <input type="radio" id="iptCargoF" name="iptCargo"> 
+            <label for="iptCargoF"> Financeiro </label> 
+            <input type="radio" id="iptCargoR" name="iptCargo"> 
+            <label for="iptCargoR"> Recepção </label> 
+            <input type="radio" id="iptCargoA" name="iptCargo"> 
+            <label for="iptCargoA"> Administrativo </label> 
+            <input type="radio" id="iptCargoJ" name="iptCargo"> 
+            <label for="iptCargoJ"> Jurídico </label> 
+            <br><br> 
+
+            Área de interesse
+            <br>
+            <input type="checkbox" id="iptInteresse1" name="iptInteresse1" value="Computação">
+            <label for="iptInteresse1"> Computação </label>
+
+            <input type="checkbox" id="iptInteresse2" name="iptInteresse2" value="Química">
+            <label for="iptInteresse2"> Química </label>
+
+            <input type="checkbox" id="iptInteresse3" name="iptInteresse3" value="Meio Ambiente">
+            <label for="iptInteresse3"> Meio Ambiente </label>
+
+            <input type="checkbox" id="iptInteresse4" name="iptInteresse4" value="Engenharia">
+            <label for="iptInteresse4"> Engenharia </label>
+
+            <input type="checkbox" id="iptInteresse5" name="iptInteresse5" value="Matemática">
+            <label for="iptInteresse5"> Matemática </label><br><br>
+
+            <label for="txtComentarios">Mini-currículo: </label></p>
+            <textarea id="txtComentarios" name="txtComentarios" rows="4" cols="50"> </textarea>
+
+        </select> <br> 
+        </form>
+    </fieldset>
+    <br>
+    <button type="button">Enviar</button> 
+    <button type="reset">Limpar</button>
+</div>
+
+</body>
+</html>
