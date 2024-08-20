@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-Sala</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/as.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h5 id="t1">Q-SALA</h5>
+            </div>
+        </header>
+        
+        <main>
+              <br> <h4 id="t4">Bem-vindo ao Q-Sala!</h4>
+                  <h4 id="t5">Utilize as informações abaixo para verificar a disponibilidade dos espaços e planejar suas atividades de forma eficiente. </h4>
+            <br>
+             <div id="caixa">
+                 <h1 id="t5">Selecione a Sala e o Estado:</h1>
+                 <div class="linha">
+                     <label for="salaSelect">Sala:</label>
+                     <select id="salaSelect">
+                         <option value="b1">Laboratório Eletrônica e Sistema Embarcado (LAESE)</option>
+                         <option value="b2">Laboratório de Informática 3</option>
+                         <option value="b3">Laboratório Eletro-eletrônica para Computação</option>
+                         <option value="b4">Laboratório Sistemas Digitais</option>
+                         <option value="b5">Sala de Aula 09</option>
+                         <option value="b6">Laboratório Redes 01</option>
+                         <option value="b7">Sala de Aula 10</option>
+                         <option value="b8">Laboratório Rede Sem Fio</option>
+                         <option value="b9">Sala de Aula 08</option>
+                         <option value="b10">Sala de Aula 07</option>
+                         <option value="b11">Sala de Aula 06</option>
+                         <option value="b12">Informática</option>
+                         <option value="b13">Laboratório de Sistemas Computacionais (LASIC)</option>
+                         <option value="b14">Gabinete Docente 11</option>
+                         <option value="b15">Laboratório Tecnologia da Informação de Maracanaú (Latim)</option>
+                         <option value="b16">Gabinete Docente 06</option>
+                         <option value="b17">Gabinete Docente 07</option>
+                         <option value="b18">Gabinete Docente 08</option>
+                         <option value="b19">Gabinete Docente 09</option>
+                         <option value="b20">Gabinete Docente 10</option>
+                     </select>
+                     <label for="estadoSelect">Estado:</label>
+                     <select id="estadoSelect">
+                         <option value="livre">Livre</option>
+                         <option value="ocupado">Ocupado</option>
+                         <option value="manutencao">Manutenção</option>
+                     </select>
+                    <br><button onclick="alterarEstado()">Alterar</button>
+                  
+                 </div>
+          <div id="caixa">
+            <h1 id="t5">Cada ambiente pode estar em três estados, podemos perceber isso pelas cores:</h1>
+            <h6 style="color: green;">Livre = verde</h6>
+            <h6 style="color: red;">Ocupado = vermelho</h6>
+            <h6 style="color: gray;">Manutenção = cinza</h6><br>
+            <h1>Virando para a esquerda, você encontra as seguintes salas:</h1>
+            <div>
+            <div class="linha">
+              <div class="box" id="b1">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Laboratório Eletrônica e Sistema Embarcado (LAESE)</h3>
+              </div>
+              <div class="box" id="b2">
+                <h1>MANUTENÇÃO</h1>
+                <div class="line"></div>
+                <h3> Laboratório de Informática 3</h3>
+              </div>
+              <div class="box" id="b3">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Laboratório Eletro-eletrônica para Computação</h3>
+              </div>
+              <div class="box" id="b4">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Laboratório Sistemas Digitais</h3>
+              </div>
+            </div> 
+            <div class="linha">
+              <div class="box" id="b5">
+                <h1>LIVRE</h1>
+                <div class="line"></div>
+                <h3>Sala de Aula 09</h3>
+              </div>
+              <div class="box" id="b6">
+                <h1>MANUTENÇÃO</h1>
+                <div class="line"></div>
+                <h3>Laboratório Redes 01</h3>
+              </div>
+              <div class="box" id="b7">
+                <h1>LIVRE</h1>
+                <div class="line"></div>
+                <h3>Sala de Aula 10</h3>
+              </div>
+              <div class="box" id="b8">
+                <h1>MANUTENÇÃO</h1>
+                <div class="line"></div>
+                <h3>Laboratório Rede Sem Fio</h3>
+              </div>
+            </div>
+              <br>
+              <h1>Virando para a direita, você encontra as seguintes salas:</h1><br>
+            <div class="linha">
+              <div class="box" id="b9">
+                <h1>MANUTENÇÃO</h1>
+                <div class="line"></div>
+                <h3>Sala de Aula 08</h3>
+              </div>
+              <div class="box" id="b10">
+                <h1>LIVRE</h1>
+                <div class="line"></div>
+                <h3>Sala de Aula 07</h3>
+              </div>
+              <div class="box" id="b11">
+                <h1>LIVRE</h1>
+                <div class="line"></div>
+                <h3>Sala de Aula 06</h3>
+              </div>
+              <div class="box" id="b12">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Informática</h3>
+              </div>
+            </div>
+            <div class="linha">
+              <div class="box" id="b13">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Laboratório de Sistemas Computacionais (LASIC)</h3>
+              </div>
+              <div class="box" id="b14">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Gabinete Docente 11</h3>
+              </div>
+              <div class="box" id="b15">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Laboratório Tecnologia da Informação de Maracanaú (Latim)</h3>
+              </div>
+              <div class="box" id="b16">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Gabinete Docente 06</h3>
+              </div>
+            </div>
+            <div class="linha">
+              <div class="box" id="b17">
+                <h1>MANUTENÇÃO</h1>
+                <div class="line"></div>
+                <h3>Gabinete Docente 07</h3>
+              </div>
+              <div class="box" id="b18">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Gabinete Docente 08</h3>
+              </div>
+              <div class="box" id="b19">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Gabinete Docente 09</h3>
+              </div>
+              <div class="box" id="b20">
+                <h1>OCUPADO</h1>
+                <div class="line"></div>
+                <h3>Gabinete Docente 10</h3>
+              </div>
+            </div>
+            <br>
+            <h4 id="t5">Não encontrou a sala aqui, procure no outro andar ou volte para a tela inicial:</h4>
+            <div class="linha">
+              <a href="ai.html">
+                <div class="box" id="b21">
+                  <h2>ANDAR <br>INFERIOR</h2>
+                </div>
+              </a> 
+              <a href="inde.html">
+                <div class="box" id="b22">
+                  <h2>PÁGINA <br>INICIAL</h2>
+                </div>
+              </a> 
+            </div>
+          </div>
+          
+        </div>
+      </main>
+        <footer><p>Este projeto é apenas ilustrativo. Estas páginas foram desenvolvidas como atividade da Disciplina Programação para Web I.</p></footer>
+    </div>
+    <script src="js/script.js"></script>
+ 
+</body>
+</html>
